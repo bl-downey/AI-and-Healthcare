@@ -15,6 +15,7 @@ The data was preprocessed into a dataframe of 98,312 x 360. Here the 98,132 refe
 To ensure that each patient was normalized with respect to their own heartbeat ECG data, we normalized by patient before concatenating the heartbeats of a single patient to the larger dataframe with all the patients. 
 
 Examples of Heartbeats from each class parsed during preprocessing:
+
 ![N1](https://user-images.githubusercontent.com/72525765/178573451-572cd337-36bf-4eb1-bc46-b31593ec725d.PNG)
 ![L3](https://user-images.githubusercontent.com/72525765/178573450-99de9978-9371-49f2-b41f-252ad2b4ac19.PNG)
 ![R2](https://user-images.githubusercontent.com/72525765/178573443-2c830248-e5fe-4aab-a88c-853e7fe9649a.PNG)
