@@ -36,6 +36,7 @@ Decision Tree
 In analysis of the feature importance of both the LR and DT models, the top feature was blood serum measurement s4. Looking at s4 in the correlation heatmap above, we can claim that the the feature s4 has mild to strong positive correlations with a lot of the other features, as well as a strong negative correlation with the feature s3, and a mild positive correlation with the target. Since both models agree on the top feature we can claim that this feature s4 gives the most information for both the LR and DT models. 
 
 Here we have the feature importance extracted from the LR model (left) and from the DT model (right) graphed against their feature names
+
 <img width="279" alt="Screen Shot 2022-07-12 at 4 40 51 PM" src="https://user-images.githubusercontent.com/72525765/178616391-aa6fa6d2-20dd-4246-9e10-7c4a147c25bc.png"> <img width="284" alt="Screen Shot 2022-07-12 at 4 41 12 PM" src="https://user-images.githubusercontent.com/72525765/178616418-8f788fa7-21e0-4932-bbbd-313128ee7c4f.png">
 
 ## DT Explainability
