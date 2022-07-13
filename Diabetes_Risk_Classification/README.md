@@ -8,7 +8,7 @@ A binary classification problem with target classes 1 referring to high risk and
 
 ## Dataset
 
-The data contained 10 numeric features: age, sex, body mass index (bmi), average blood pressure and six blood serum measurements (s1-s6 in the dataframe below). As previously stated the target is binary classification, high risk or low risk of chronic diabetes.
+The data contained 10 numeric features: age, sex, body mass index (bmi), average blood pressure and six blood serum measurements (s1-s6 in the dataframe below). As previously stated the target is binary classification, high risk or low risk of chronic diabetes. This data was normalized using Scikit-learn's normalize method, the StandardScaler was also tried but found to be less effective in the end result. 
 
 <img width="445" alt="Screen Shot 2022-07-12 at 4 15 42 PM" src="https://user-images.githubusercontent.com/72525765/178614086-d7252f11-005e-4435-a181-89c88e11eda2.png">
 
