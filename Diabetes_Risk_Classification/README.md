@@ -42,33 +42,7 @@ Here we have the feature importance extracted from the LR model (left) and from 
 
 In order to have a model be explainable, I needed something visually interpretable. For this I simply used the DT model as I already had the model trained to an acceptable accuracy. To explain to the reader why the DT arrived at the prediction it did, this is assisted by a DT graphed out in the notebook which is helpful for graphical explanation, I generated a function which uses the DT models decision_path function which accepts a feature list as a sample and returns a path. This path was then followed, with each feature name and threshold value being printed with the feature value at that split so the user can confirm which direction it went was the correct one. Below are 3 examples of positive predictions and 1 negative prediction.
 
-*Path for predicting sample 0 with dataframe index 124
-Decision at node 0: split on s4 with threshold  0.155. The feature value at this split is  0.143, so the left path is taken.
-Decision at node 1: split on s5 with threshold  0.018. The feature value at this split is  0.019, so the right path is taken.
-Decision at node 9: split on bmi with threshold  0.004. The feature value at this split is  0.004, so the left path is taken.
-Leaf node reached! The DT predicted 1.0 and the true value was 1.0 so it was a correct prediction!*
-
-*Path for predicting sample 1 with dataframe index 182
-Decision at node 0: split on s4 with threshold  0.155. The feature value at this split is  0.151, so the left path is taken.
-Decision at node 1: split on s5 with threshold  0.018. The feature value at this split is  0.014, so the left path is taken.
-Decision at node 2: split on bmi with threshold  0.008. The feature value at this split is  0.003, so the left path is taken.
-Decision at node 3: split on s3 with threshold  0.525. The feature value at this split is  0.516, so the left path is taken.
-Leaf node reached! The DT predicted 1.0 and the true value was 1.0 so it was a correct prediction!*
-
-*Path for predicting sample 2 with dataframe index 164
-Decision at node 0: split on s4 with threshold  0.155. The feature value at this split is  0.147, so the left path is taken.
-Decision at node 1: split on s5 with threshold  0.018. The feature value at this split is  0.016, so the left path is taken.
-Decision at node 2: split on bmi with threshold  0.008. The feature value at this split is  0.003, so the left path is taken.
-Decision at node 3: split on s3 with threshold  0.525. The feature value at this split is  0.438, so the left path is taken.
-Leaf node reached! The DT predicted 1.0 and the true value was 1.0 so it was a correct prediction!*
-
-*Path for predicting sample 4 with dataframe index 204
-Decision at node 0: split on s4 with threshold  0.155. The feature value at this split is  0.223, so the right path is taken.
-Decision at node 16: split on bp with threshold  0.099. The feature value at this split is  0.090, so the left path is taken.
-Decision at node 17: split on s4 with threshold  0.238. The feature value at this split is  0.223, so the left path is taken.
-Decision at node 18: split on s5 with threshold  0.014. The feature value at this split is  0.010, so the left path is taken.
-Decision at node 19: split on s3 with threshold  0.471. The feature value at this split is  0.403, so the left path is taken.
-Leaf node reached! The DT predicted 1.0 and the true value was 0.0 so it was an incorrect prediction!*
+<img width="855" alt="Screen Shot 2022-07-12 at 5 06 31 PM" src="https://user-images.githubusercontent.com/72525765/178619272-c1a205d3-854b-41a0-b74d-af7c8b8ccdc7.png">
 
 ## Results
 
